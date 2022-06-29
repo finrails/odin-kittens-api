@@ -1,0 +1,6 @@
+<% @kittens.each do |kitten| %>
+  <article style="border: 1px solid black; padding: 0.5rem; display: flex; gap: 8px;">
+    <span><%= kitten.id %> / <%= kitten.name %></span>
+    <%= button_to 'Destroy this kitten', kitten_path(kitten), method: :delete, style: "cursor: pointer;" %>
+  </article>
+<% end %>
