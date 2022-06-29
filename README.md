@@ -1,24 +1,5 @@
-# README
+# odin_kittens
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a fast and straightforward project where I set up a Rails app to be a data-producing API… which is just a fancy way of saying that all controller methods will render data instead of HTML.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![cute cat](https://www.dlf.pt/dfpng/middlepng/452-4529947_transparent-disguise-png-chibi-kawaii-cat-anime-png.png)
