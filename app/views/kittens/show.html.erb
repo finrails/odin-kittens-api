@@ -1,3 +1,10 @@
-<article>
-  <p><%= @kitten.id %> | <%= @kitten.name %></p>
+<article style="width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center;">
+  <div style="display: flex; flex-direction: column; gap: 4px; padding: 2rem; border: 1px solid black;">
+    <span>ID: <%= @kitten.id %></span>
+    <span>Name: <%= @kitten.name %></span>
+    <span>Age: <%= @kitten.age %></span>
+    <span>Cuteness: <%= @kitten.cuteness %></span>
+    <span>Softness: <%= @kitten.softness %></span>
+    <%= link_to 'Go back', root_path %>
+  </div>
 </article>

@@ -1,6 +1,11 @@
-<% @kittens.each do |kitten| %>
-  <article style="border: 1px solid black; padding: 0.5rem; display: flex; gap: 8px;">
-    <span><%= kitten.id %> / <%= kitten.name %></span>
-    <%= button_to 'Destroy this kitten', kitten_path(kitten), method: :delete, style: "cursor: pointer;" %>
-  </article>
-<% end %>
+<div style="padding: 0.5rem;">
+  <% @kittens.each do |kitten| %>
+    <article class="kitten-information-container" style="margin-bottom: 4px; border: 1px solid black; padding: 0.5rem; display: flex; gap: 8px; align-items: center;">
+      <%= button_to 'E', edit_kitten_path(kitten), method: :get, style: "cursor: pointer; padding: 4px;" %>
+      <%= button_to 'X', kitten_path(kitten), method: :delete, style: "cursor: pointer; padding: 4px; background-color: red; color: white; border: 2px solid darkred; border-radius: 2px;" %>
+      <%= link_to kitten_path(kitten), style: 'text-decoration: none;' do %>
+        <span><%= kitten.id %> / <%= kitten.name %></span>
+      <% end %>
+    </article>
+  <% end %>
+</div>
